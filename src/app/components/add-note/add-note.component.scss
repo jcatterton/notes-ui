@@ -1,0 +1,38 @@
+span {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  mat-form-field{
+    width: 100%;
+    input {
+      border: solid lightgrey 1px;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  mat-form-field{
+    width: 100%;
+    textarea {
+      height: 100px;
+      border: solid lightgrey 1px;
+    }
+  }
+}
+
+.buttons {
+  button {
+    width: 100px;
+    margin-right: 10px;
+  }
+}

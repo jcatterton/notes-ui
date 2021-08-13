@@ -1,0 +1,16 @@
+<mat-card class="page-wrapper">
+  <div class="header">
+    <button mat-stroked-button (click)="addNote()">Add Note</button>
+  </div>
+  <mat-card class="note-card mat-elevation-z2" *ngFor="let note of notes">
+    <div class="note-header">
+      <span>{{ note.name }}</span>
+      <span>{{ note.lastEditedTs | date:'medium' }}</span>
+    </div>
+    <textarea #textEditor class="note-text" [value]="note.text"></textarea>
+    <div class="buttons">
+      <button mat-stroked-button class="save-button" (click)="saveNote(note, textEditor.value)">Save</button>
+      <button mat-stroked-button class="delete-button" (click)="deleteNote(note)">Delete</button>
+    </div>
+  </mat-card>
+</mat-card>

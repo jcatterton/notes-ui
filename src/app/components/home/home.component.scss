@@ -1,0 +1,41 @@
+.page-wrapper {
+  width: 80%;
+  margin: 0 auto !important;
+}
+
+.note-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px lightgrey solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.note-text {
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  button {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .save-button {
+    border-color: blue;
+    color: blue;
+  }
+
+  .delete-button {
+    border-color: red;
+    color: red;
+  }
+}

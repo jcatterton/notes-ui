@@ -1,0 +1,18 @@
+{
+  "/api/*": {
+    "target": "http://192.168.1.15:31208/notesapi/",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  },
+  "/auth/*": {
+    "target": "http://192.168.1.15:30208",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/auth": ""
+    }
+  }
+}

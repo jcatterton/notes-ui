@@ -1,0 +1,16 @@
+<div class="name">
+  <span class="name-label">Name:</span>
+  <mat-form-field [formGroup]="form">
+    <input matInput formControlName="name" class="name-input"/>
+  </mat-form-field>
+</div>
+<div class="text">
+  <span class="text-label">Text:</span>
+  <mat-form-field [formGroup]="form">
+    <textarea matInput formControlName="text" class="text-input"></textarea>
+  </mat-form-field>
+</div>
+<div class="buttons">
+  <button mat-stroked-button class="save-button" (click)="submit()" [disabled]="formInvalid()">Save</button>
+  <button mat-stroked-button class="cancel-button" (click)="cancel()">Cancel</button>
+</div>
